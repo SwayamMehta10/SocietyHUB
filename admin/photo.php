@@ -128,7 +128,7 @@ session_start();
         while ($images  = mysqli_fetch_assoc($res)) { ?>
 
           <div class="alb">
-            <img src="img/<?= $images['image_url'] ?>">
+            <img src="../img/<?= $images['image_url'] ?>">
           </div>
 
       <?php  }
