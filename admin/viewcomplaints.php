@@ -16,7 +16,7 @@ session_start();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>View complaints</title>
-  <link rel="stylesheet" href="user\dashstyle.css">
+  <link rel="stylesheet" href="..\user\dashstyle.css">
   <script src="https://kit.fontawesome.com/2edfbc5391.js" crossorigin="anonymous"></script>
   <style>
     .content-table {
@@ -67,20 +67,20 @@ session_start();
       <h3>Society<span>HUB</span></h3>
     </div>
     <div class="right_area">
-      <a href="user\logout.php" class="logout_btn">Logout</a>
+      <a href="..\user\logout.php" class="logout_btn">Logout</a>
     </div>
   </header>
   <!--header area end-->
   <!--sidebar start-->
   <div class="sidebar">
     <center>
-      <img src="img\face.png" class="profile_image" alt="">
+      <img src="..\img\face.png" class="profile_image" alt="">
       <h4> Admin </h4>
     </center>
-    <a href="admin\managemem.php"><i class="fas fa-desktop"></i><span>Manage Members</span></a>
-    <a href="admin\addnotice.php"><i class="fas fa-bullhorn"></i><span>Add Notice</span></a>
-    <a href="admin\viewcomplaints.php" class="active"><i class="fas fa-envelope-open-text"></i><span>View Complaints</span></a>
-    <a href="admin\photo.php"><i class="fas fa-camera-retro"></i><span>Photo Gallery</span></a>
+    <a href="managemem.php"><i class="fas fa-desktop"></i><span>Manage Members</span></a>
+    <a href="addnotice.php"><i class="fas fa-bullhorn"></i><span>Add Notice</span></a>
+    <a href="viewcomplaints.php" class="active"><i class="fas fa-envelope-open-text"></i><span>View Complaints</span></a>
+    <a href="photo.php"><i class="fas fa-camera-retro"></i><span>Photo Gallery</span></a>
     <!-- <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
       <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a> -->
   </div>

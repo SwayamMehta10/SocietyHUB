@@ -30,11 +30,11 @@ if (!$conn) {
 
     if ($result) {
         echo "<script>alert('Member added Successfully..!!');
-        window.location.href = 'admin\managemem.php';
+        window.location.href = 'managemem.php';
         </script>";
     } else {
         echo "<script>alert('Not Saved...Please try again.!!');
-        window.location.href = 'admin\insertuser.php';
+        window.location.href = 'insertuser.php';
         </script>";
     }
 }

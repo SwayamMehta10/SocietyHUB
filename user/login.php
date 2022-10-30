@@ -22,14 +22,14 @@ $result = mysqli_query($conn, $sql);
 $num = mysqli_num_rows($result);
 if ($num == 1) {
     echo "<script>alert('Welcome,You are logged in...!');
-    window.location.href = 'user\Welcome.php';
+    window.location.href = 'Welcome.php';
     </script>";
     session_start();
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $Username;
 } else {
     echo "<script>alert('Sorry,Invalid credentials...!');
-    window.location.href = 'user\login.html';
+    window.location.href = 'login.html';
     </script>";
     mysqli_error($conn);
 }

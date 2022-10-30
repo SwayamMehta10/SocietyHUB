@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adminlogin</title>
     <script src="https://kit.fontawesome.com/2edfbc5391.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="user\style1.css">
+    <link rel="stylesheet" href="..\user\style1.css">
     <style>
         .form-container1 {
             background: #fff;
@@ -37,7 +37,7 @@
 <body>
     <div class="page">
         <div class="navbar">
-            <img src="img\shlogo.jpg" class="logo">
+            <img src="..\img\shlogo.jpg" class="logo">
             <h1>Society<span style="font-family: 'Merienda', cursive;
             color:rgb(20, 76, 80);">HUB</span></h1>
             <nav>
@@ -46,19 +46,19 @@
                     <li><a href="#rules">Rules & Regulations</a></li>
                 </ul>
             </nav>
-            <a href="user\login.html" class="btn">User Login</a>
+            <a href="..\user\login.html" class="btn">User Login</a>
         </div>
         <div class="row">
             <div class="col-1">
-                <img src="img\building1.jpg">
+                <img src="..\img\building1.jpg">
             </div>
             <div class="col-2">
                 <div class="form-container1">
                     <div class="adminfbtn">
                         <h1>Admin Login</h1>
                     </div>
-                    <img src="img\adminlogin.jpg" class="admimg" alt="">
-                    <form action="admin\Adminlogin.php" method="POST">
+                    <img src="..\img\adminlogin.jpg" class="admimg" alt="">
+                    <form action="Adminlogin.php" method="POST">
                         <input type="text" placeholder="Username" name="username" required>
                         <input type="text" placeholder="Admin Code" name="admincode" required>
                         <button type="submit" class="btn-losi" name="logina">Login</button>
@@ -99,7 +99,7 @@
                 <div class="cen">
                     <h2>Quick Links</h2>
                     <ul>
-                        <li><a href="user\login.html">Home</a></li>
+                        <li><a href="..\user\login.html">Home</a></li>
                         <li><a href="#Loginform">Login</a></li>
                         <li><a href="#rules">Rules and Regulations</a></li>
                     </ul>
@@ -138,7 +138,7 @@ if (isset($_POST['logina'])) {
     $adcode = $_POST['admincode'];
     if ($user == "Admin" && $adcode == "100") {
         echo "<script>alert('Welcome,You are logged in...!');
-        window.location.href ='admin\managemem.php';
+        window.location.href ='managemem.php';
         </script>";
     } else {
         echo "<script>alert('Sorry,Please enter valid details.!!');

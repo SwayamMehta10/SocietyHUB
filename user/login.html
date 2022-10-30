@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SocietyHub</title>
-    <link rel="stylesheet" href="user\style1.css">
+    <link rel="stylesheet" href="style1.css">
     <script src="https://kit.fontawesome.com/2edfbc5391.js" crossorigin="anonymous"></script>
 
 </head>
@@ -14,7 +14,7 @@
 <body>
     <div class="page">
         <div class="navbar">
-            <img src="img\shlogo.jpg" class="logo">
+            <img src="..\img\shlogo.jpg" class="logo">
             <h1>Society<span style="font-family: 'Merienda', cursive;
             color:rgb(20, 76, 80);">HUB</span></h1>
             <nav>
@@ -23,11 +23,11 @@
                     <li><a href="#rules">Rules & Regulations</a></li>
                 </ul>
             </nav>
-            <a href="admin\Adminlogin.php" class="btn">Admin Login</a>
+            <a href="..\admin\Adminlogin.php" class="btn">Admin Login</a>
         </div>
         <div class="row">
             <div class="col-1">
-                <img src="img\building1.jpg">
+                <img src="..\img\building1.jpg">
             </div>
             <div class="col-2">
                 <div class="form-container">
@@ -36,7 +36,7 @@
                         <span onclick="register()">Register</span>
                         <hr id="indicator">
                     </div>
-                    <form action="user\login.php" method="POST" id="Loginform">
+                    <form action="login.php" method="POST" id="Loginform">
                         <input type="text" placeholder="Username" name="username" required>
                         <input type="email" placeholder="E-mail" name="email" required>
                         <input type="text" placeholder="Flat-No." name="flatno" required>
@@ -45,7 +45,7 @@
                         <a href="">Forget Password...???</a>
 
                     </form>
-                    <form action="user\register.php" method="POST" id="Regform">
+                    <form action="register.php" method="POST" id="Regform">
                         <input type="text" placeholder="Username" name="username" required>
                         <input type="email" placeholder="E-mail" name="email" required>
                         <input type="text" placeholder="Flat-No." name="flatno" required>
@@ -99,7 +99,7 @@
                 <div class="cen">
                     <h2>Quick Links</h2>
                     <ul>
-                        <li><a href="user\login.html">Home</a></li>
+                        <li><a href="login.html">Home</a></li>
                         <li><a href="#Loginform">Login</a></li>
                         <li><a href="#rules">Rules and Regulations</a></li>
                     </ul>

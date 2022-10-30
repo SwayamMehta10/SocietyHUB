@@ -95,11 +95,11 @@
 
                     if ($query_run) {
                         echo "<script>alert('Updated Successfully..!!');
-                    window.location.href = 'admin\managemem.php';
+                    window.location.href = 'managemem.php';
                     </script>";
                     } else {
                         echo "<script>alert('Not updated...Please try again.!!');
-                    window.location.href = 'admin\updateuser.php';
+                    window.location.href = 'updateuser.php';
                     </script>";
                     }
                 }

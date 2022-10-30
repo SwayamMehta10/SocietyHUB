@@ -10,11 +10,11 @@ if (isset($_POST['delete'])) {
 
     if ($query_run) {
         echo "<script>alert('Data Deleted Successfully..!!');
-             window.location.href = 'admin\managemem.php';
+             window.location.href = 'managemem.php';
             </script>";
     } else {
         echo "<script>alert('Data not deleted,please try again..!!');
-            window.location.href = 'admin\deleteuser.php';
+            window.location.href = 'deleteuser.php';
             </script>";
     }
 }

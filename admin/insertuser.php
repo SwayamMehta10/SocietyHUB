@@ -63,7 +63,7 @@
 <body>
     <div class="container">
         <h1>Add Member</h1>
-        <form action="admin\insertfile.php" method="POST">
+        <form action="insertfile.php" method="POST">
             <input type="text" placeholder="Username" name="username" required>
             <input type="email" placeholder="E-mail" name="email" required>
             <input type="text" placeholder="Flat-No." name="flatno" required>

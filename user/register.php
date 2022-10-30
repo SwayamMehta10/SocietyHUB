@@ -31,11 +31,11 @@ if (!$conn) {
 
     if ($result) {
         echo "<script>alert('Registration successfull...you may now login.');
-        window.location.href = 'user\login.html';
+        window.location.href = 'login.html';
         </script>";
     } else {
         echo "<script>alert('Registration Failed...Please try again.!!');
-        window.location.href = 'user\login.html';
+        window.location.href = 'login.html';
         </script>";
     }
 }

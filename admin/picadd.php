@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST['upload']) && isset($_FILES['my_image'])) {
-    include "user\db_conn.php";
+    include "..\user\db_conn.php";
 
     echo "<pre>";
     print_r($_FILES['my_image']);
@@ -15,7 +15,7 @@ if (isset($_POST['upload']) && isset($_FILES['my_image'])) {
     if ($error === 0) {
         if ($img_size > 262144) {
             $em = "Sorry,your file is too large..";
-            header("Location: admin\photo.php?error=$em");
+            header("Location: photo.php?error=$em");
         } else {
             $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
             $img_ex_lc = strtolower($img_ex);
@@ -30,16 +30,16 @@ if (isset($_POST['upload']) && isset($_FILES['my_image'])) {
                 $sql = "INSERT INTO images (image_url) 
                     VALUES('$new_img_name')";
                 mysqli_query($conn, $sql);
-                header("Location: admin\photo.php");
+                header("Location: photo.php");
             } else {
                 $em = "You can't upload files of this type..!!";
-                header("Location: admin\photo.php?error=$em");
+                header("Location: photo.php?error=$em");
             }
         }
     } else {
         $em = "unknown error occurred..!!";
-        header("Location: admin\managemem.php?error=$em");
+        header("Location: managemem.php?error=$em");
     }
 } else {
-    header("Location: admin\managemem.php");
+    header("Location: managemem.php");
 }
