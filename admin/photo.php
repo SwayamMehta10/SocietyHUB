@@ -8,7 +8,7 @@ session_start();
 // }
 
 ?>
-<?php include "db_conn.php"; ?>
+<?php include "..\user\db_conn.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
