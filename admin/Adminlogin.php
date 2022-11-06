@@ -111,11 +111,11 @@
                 <div class="content">
                     <div class="place">
                         <span class="fas fa-map-marker-alt"></span>
-                        <span class="text">Powder Galie, Goregaon(E)</span>
+                        <span class="text">Powder Gali, Goregaon(E)</span>
                     </div>
                     <div class="phone">
                         <span class="fas fa-phone-alt"></span>
-                        <span class="text">+91 7045959696</span>
+                        <span class="text">+91 70xxxxxx96</span>
                     </div>
                     <div class="email">
                         <span class="fas fa-envelope"></span>
